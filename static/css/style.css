@@ -1,0 +1,281 @@
+body {
+    color: #233975;
+}
+
+.breadcrumbs {
+  text-align: center;
+  background: #233975;
+  padding: 30px 0;
+  color: #fff;
+  width: 100%;
+}
+  
+.breadcrumbs h2 {
+  font-size: 32px;
+  font-weight: 500;
+}
+  
+.breadcrumbs p {
+    color: #fff;
+}
+
+@media (max-width: 650px) {
+    .breadcrumbs .title {
+        font-size: 20px;
+    }    
+}
+
+#btn-back {
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+}
+
+#btn-next {
+    cursor: pointer;
+    text-decoration: none;
+    color: #E7DB47;
+    font-weight: 600;
+}
+
+.center-div {
+    margin-left: 25%;
+}
+
+@media (max-width: 992px) {
+    .center-div {
+      margin-left: 0px;
+    }
+}  
+
+.step-text {
+    margin-top: 30px;
+}
+
+.select-img-div {
+    width: 100px;
+    height: 100px;
+}
+
+.select-img-div .select-img {
+    object-fit: cover;
+    border-radius: 50px;
+    width: 100%;
+    height: 100px;
+    cursor: pointer;
+}
+
+.center-div .select-img-txt {
+    margin-left: 22px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+@media (max-width: 430px) {
+    .select-img-div .select-img {
+        height: 70px;
+    }
+    .select-img-div {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 340px) {
+    .select-img-div .select-img {
+      height: 50px;
+    }
+    .select-img-div {
+        width: 50px;
+        height: 50px;
+    }
+    #btn-next {
+        font-size: 13px;
+    }
+    .center-div .select-img-txt {
+        margin-left: 7px;
+    }
+}
+
+.form-div {
+    margin: auto;
+    width: 50%;
+}
+
+@media (max-width: 769px) {
+    .form-div {
+        width: 80%;
+    }
+}
+
+.signup-form .validate {
+    display: none;
+    color: red;
+    margin: 0 0 15px 0;
+    font-weight: 400;
+    font-size: 13px;
+    text-align: left;
+}
+
+.signup-form input[type="email"], .signup-form input[type="password"], .signup-form input[type="text"], .signup-form input[type="file"], .signup-form select {
+    box-shadow: none;
+    border-radius: 50px;
+    padding-left: 15px;
+}
+  
+.signup-form input:focus, .signup-form select:focus {
+    border-color: #233975;
+    box-shadow: none;
+}
+  
+.signup-form .btn-signup {
+    background-color: #233975;
+    color: #fff;
+    border-color: #233975;
+    border-radius: 50px;
+    font-size: 14px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: 0.4s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+.signup-form .btn-signup:hover {
+    background-color: #3b5fc4;
+    border-color: #3b5fc4;
+    box-shadow: none;
+}
+
+.signup-form .btn-signup:focus {
+    box-shadow: none;
+}
+
+.signup-form .txt {
+    font-size: 13px;
+    text-align: center;
+}
+
+a.links {
+    color: #233975;
+}
+
+.drop-menu {
+    border-color: transparent;
+}
+
+.drop-menu .drop-item {
+    color: #233975;
+    font-weight: 500;
+}
+
+.drop-menu .dropdown-item:active {
+    background-color: #3b5fc4;
+    color: #fff;
+}
+
+.btn-account {
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn-account:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn-approve {
+    background-color: #00cc00;
+    color: #fff;
+    transition: 0.4s;
+    font-size: 12px;
+    border-radius: 50px;
+}
+
+.btn-approve:hover {
+    background-color: #00b300;
+    color: #fff;
+}
+
+.btn-approve:focus {
+    box-shadow: none;
+}
+
+.btn-reject {
+    background-color: #ff1a1a;
+    color: #fff;
+    transition: 0.4s;
+    font-size: 12px;
+    border-radius: 50px;
+}
+
+.btn-reject:hover {
+    background-color: #cc0000;
+    color: #fff;
+}
+
+.btn-reject:focus {
+    box-shadow: none;
+}
+
+input[type="text"] {
+    box-shadow: none;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    padding-left: 15px;
+}
+
+input[type="text"]:focus {
+    border-color: #233975;
+    box-shadow: none;
+}
+
+.btn-search {
+    float: right;
+    width: 20%;
+    padding: 6px;
+    background: #233975;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+    margin-top: -38px;
+    margin-right: -30px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-color: transparent;
+    height: 38px;
+    transition: 0.4s;
+}
+
+.btn-search:hover {
+    color: #fff;
+    background-color: #3b5fc4;
+}
+
+.suggestion-list {
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-bottom: 5px;
+}
+
+.suggestion-list .suggestion-item:hover {
+    cursor: pointer;
+    background-color: #3b5fc4;
+    color: #fff;
+}
+
+.autocomplete-active {
+    background-color: #3b5fc4;
+}
+
+.btn-req {
+    border-radius: 50px;
+    font-size: 12px;
+}
