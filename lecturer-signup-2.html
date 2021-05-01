@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Signup</title>
+        
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="static/font-awesome/css/font-awesome.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <main>
+        <!-- ======= Breadcrumbs ======= -->
+        <div class="breadcrumbs" data-aos="fade-in">
+            <div class="container">
+                <h3 class="title">Lecturer Signup</h3>
+                <div class="row justify-content-between">
+                    <div class="col-2">
+                        <a href="/lecturer-signup.html" id="btn-back"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div><!-- End Breadcrumbs -->
+        <div class="container">
+            <p class="step-text">STEP 3 OF 3</p>
+
+            <div class="form-div">
+                <form action="" method="" class="signup-form">
+                    <div class="form-group">
+                        <label for="department">Department</label>
+                        <select class="form-control" id="department" name="department">
+                            <option>Electronics and Telecommunication Engineering</option>
+                            <option>Computer Engineering</option>
+                            <option>Information and Technology Enginnering</option>
+                            <option>Mechanical Engineering</option>
+                            <option>Chemical Engineering</option>
+                            <option>Civil Engineering</option>
+                        </select>
+                        <div class="validate"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="default-mode">Select Default Mode</label>
+                        <select class="form-control" id="default-mode" name="default-mode">
+                            <option>In Lecture</option>
+                            <option>In Cabin</option>
+                            <option>On leave</option>
+                            <option>Free</option>
+                        </select>
+                        <div class="validate"></div>
+                    </div>
+                    <div class="form-check mt-2">
+                        <input type="checkbox" class="form-check-input" name="accept-term" id="accept-term">
+                        <label class="form-check-label" for="accept-term">I accept the <a class="links" href="#terms">Terms of Use</a>.</label>
+                    </div>
+                    <button class="btn btn-signup mt-5">Signup</button>
+                    <p class="txt mt-2">By continuing, you agree to accept our Privacy Policy & Terms of Service.</p>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="static/js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS Files -->
+    <script src="static/js/validate-signup.js"></script>
+</body>
+</html>

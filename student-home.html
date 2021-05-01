@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lecturer Home</title>
+        
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="static/font-awesome/css/font-awesome.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <main>
+        <!-- ======= Breadcrumbs ======= -->
+        <div class="breadcrumbs" data-aos="fade-in">
+            <div class="container">
+                <h3 class="title">Student Home</h3>
+                <div class="row justify-content-between">
+                    <div class="col-2"></div>
+                    <div class="col-3">
+                        <div class="dropdown">
+                            <a href="#account" class="dropdown-toggle btn-account" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+                          
+                            <div class="dropdown-menu shadow drop-menu dropdown-menu-right" aria-labelledby="dropdownMenu">
+                                <a class="dropdown-item drop-item" href="/student-home.html">Home</a>
+                                <a class="dropdown-item drop-item" href="/student-edit-details.html">Edit Account Details</a>
+                                <a class="dropdown-item drop-item" href="/student-pending-req.html">View Pending Requests <span class="badge badge-warning badge-pill">3</span></a>
+                                <a class="dropdown-item drop-item" href="/student-approved-req.html">View Approved Requests <span class="badge badge-success badge-pill">3</span></a>
+                                <a class="dropdown-item drop-item" href="/student-rejected-req.html">View Rejected Requests <span class="badge badge-danger badge-pill">3</span></a>
+                                <a class="dropdown-item drop-item" href="/index.html">Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- End Breadcrumbs -->
+        <div class="container">
+            <div class="form-div mt-5">
+                <form action="" autocomplete="off">
+                    <input type="text" class="form-control" id="search" placeholder="Try searching first later of name of lecturer">
+                    <button type="button" id="btn-search" class="btn btn-search"><i class="fa fa-search"></i></button>
+                </form>
+                <div class="alert alert-primary alert-dismissible fade mt-5" role="alert">
+                    <strong id="prof-name">Empty</strong><br>
+                    Status: <strong>Free</strong>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <br><br>
+                    <button type="button" class="btn btn-req btn-info">Request Appointment</button>
+                  </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="static/js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom Suggestion JS File -->
+    <script src="static/js/lecturer-name-suggestion.js"></script>
+
+    <script>
+        $(document).on('click', '#btn-search', function() {
+            var searched_lecturer = $('#search').val();
+            if(searched_lecturer == '') {
+                alert("Please enter valid input");
+            }
+            else {
+                $('#prof-name').text(searched_lecturer);
+                $('.alert-primary').addClass('show');
+            }
+        });
+    </script>
+</body>
+</html>
